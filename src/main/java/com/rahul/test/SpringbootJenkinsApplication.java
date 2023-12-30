@@ -2,8 +2,7 @@ package com.rahul.test;
 
 
 
-import java.util.logging.Logger;
-
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +12,7 @@ import jakarta.annotation.PostConstruct;
 @SpringBootApplication
 public class SpringbootJenkinsApplication {
 	
-	public static Logger logger = (Logger) LoggerFactory.getLogger(SpringbootJenkinsApplication.class);
+	public static Logger logger = LoggerFactory.getLogger(SpringbootJenkinsApplication.class);
 
 	@PostConstruct
 	public void init() {
